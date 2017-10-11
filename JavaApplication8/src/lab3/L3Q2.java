@@ -1,23 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lab3;
 
 import java.util.Random;
 
-/**
- *
- * @author user
- */
+
 public class L3Q2 {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-        // TODO code application logic here
+       
          Random rand=new Random();
          final int SIZE=6;
          int num=rand.nextInt(SIZE);
