@@ -1,0 +1,38 @@
+package l3q4;
+import java.util.Random;
+
+
+public class L3q4 {
+
+    public static void main(String[] args) {
+        
+        int p1,p2,a,b,c,d;
+        Random r=new Random();
+        
+        System.out.println("player 1:");
+        a=r.nextInt(6)+1;
+        System.out.println(a);
+        b=r.nextInt(6)+1;
+        System.out.println(b);
+        p1=a+b;
+        
+        System.out.println();
+        
+        System.out.println("player 2:");
+        c=r.nextInt(6)+1;
+        System.out.println(c);
+        d=r.nextInt(6)+1;
+        System.out.println(d);
+        p2=c+d;
+        
+        System.out.println();        
+        if(p1>p2)
+            System.out.println("player 1 wins the game!");
+        else if(p2>p1)
+            System.out.println("player 2 wins the game!");
+        else
+            System.out.println("drew");
+        
+    }
+    
+}
