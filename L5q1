@@ -1,0 +1,62 @@
+package l5q1;
+import java.util.Random;
+import java.util.Scanner;
+
+public class L5Q1 {
+
+    
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        Random r=new Random ();
+        int avg,sum=0;
+        final int SIZE=101;
+        int[] score=new int[100];//initialize array
+        System.out.print("Enter number of students:");
+        int num=s.nextInt();
+        for(int i=0;i<=num;i++)
+        {
+            
+             score[i]=r.nextInt(SIZE);
+             System.out.print(score[i]+" "); 
+             //average score
+             sum+=score[i]; 
+            
+        }
+        
+        int max=score[0]; int min=score[0];
+        System.out.println();
+        System.out.println("initial max:" + max);
+        System.out.println("initial min:" + min);
+        for(int i=0;i<=num;i++)
+        {
+            if(max<score[i])
+            {
+               max=score[i]; 
+            }
+         
+            if(min>score[i])
+            {
+               min=score[i]; 
+            }
+        } 
+                
+
+        
+        avg=sum/num;
+        System.out.println();
+        System.out.println("average score is "+avg);
+        System.out.println("the maximum number is "+max);
+        System.out.println("the minimum number is "+min);
+         
+     
+       
+}      
+                    
+    }
+      
+         
+        
+        
+    
+    
+
