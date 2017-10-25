@@ -1,0 +1,15 @@
+package l5q1;
+import java.util.Random;
+public class L5Q2 {
+     public static void main(String[] args){
+         Random r=new Random();
+         final int SIZE=21;
+         int[] a=new int[10];
+         for(int i=0;i<10;i++){
+         a[i]=r.nextInt(SIZE);
+         System.out.print(a[i]+" ");
+        
+         }
+         System.out.println();
+     }
+}
